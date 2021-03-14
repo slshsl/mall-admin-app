@@ -1,0 +1,61 @@
+.home {
+    width: 100%;
+
+    .menu-list {
+        width: 180px;
+        position: fixed;
+        height: 100%;
+
+        .ant-menu {
+            height: 100%;
+        }
+    }
+
+    .main-app {
+        margin-left: 180px;
+        transition: margin-left 0.3s;
+
+        &.menu-unfold {
+            margin-left: 80px;
+        }
+
+        .main-header {
+            height: 50px;
+            line-height: 50px;
+            border-bottom: 1px soild #eee;
+            padding-left: 10px;
+            padding-right: 20px;
+
+            .breadcrump {
+                display: inline-block;
+                margin-left: 20px;
+            }
+
+            .user-infor {
+                float: right;
+                text-align: center;
+                cursor: pointer;
+
+                li:not(:first-child) {
+                    display: none;
+
+                    &:hover {
+                        background-color: #eee;
+                        color: #999;
+                        font-weight: 100;
+                    }
+                }
+
+                li {
+                    padding: 0 20px;
+                }
+
+                &:hover {
+                    li {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
